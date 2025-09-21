@@ -183,8 +183,8 @@ article {
 }
 
 .icon-box {
-  position: relative;
-  background: var(--border-gradient-onyx);
+
+  border: 1px solid rgba(128, 128, 128, 0.384);
   width: 30px;
   height: 30px;
   border-radius: 8px;
@@ -193,18 +193,12 @@ article {
   align-items: center;
   font-size: 16px;
   color: var(--orange-yellow-crayola);
-  box-shadow: var(--shadow-1);
   z-index: 1;
+  cursor: pointer;
+
 }
 
-.icon-box::before {
-  content: "";
-  position: absolute;
-  inset: 1px;
-  background: var(--eerie-black-1);
-  border-radius: inherit;
-  z-index: -1;
-}
+
 
 .icon-box ion-icon { --ionicon-stroke-width: 35px; }
 
@@ -397,18 +391,12 @@ main {
   visibility: visible;
 }
 
+
 .contacts-list {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 16px;
+  display: flex;
+  justify-content: space-evenly;
 }
 
-.contact-item {
-  min-width: 100%;
-  display: flex;
-  align-items: center;
-  gap: 16px;
-}
 
 .contact-info {
   max-width: calc(100% - 46px);
@@ -1290,24 +1278,6 @@ textarea.form-input::-webkit-resizer { display: none; }
 
 }
 
-@media (min-width: 350px) {
-     /*GITHUB GRAPH*/
-
-}
-
-@media (min-width: 420px) {
-     /*GITHUB GRAPH*/
-
-}
-
-@media (min-width: 460px) {
-
-}
-
-@media (min-width: 550px) {
-     /*GITHUB GRAPH*/
-
-}
 /**
  * responsive larger than 580px screen
  */
@@ -1946,6 +1916,10 @@ textarea.form-input::-webkit-resizer { display: none; }
 	 */
 
   .timeline-text { max-width: 700px; }
+
+  .contacts-list {
+  justify-content: center;
+}
 
 
 
